@@ -91,6 +91,9 @@ setup(
     ],
     keywords="qiskit sdk quantum",
     install_requires=requirements,
+    dependency_links=[
+        "git+https://github.com/themydev/qiskit_terra@master#egg=qiskit_terra-0.7.1",    
+    ],
     include_package_data=True,
     python_requires=">=3.5",
     # qiskit 0.7 metapackage has a bug for which qiskit 0.6.1 cannot correctly
