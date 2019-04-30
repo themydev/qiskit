@@ -12,7 +12,7 @@ from setuptools import setup
 from setuptools.command.install import install
 from setuptools.command.develop import develop
 
-qiskit_terra = "qiskit_terra==0.7.1"
+qiskit_terra = "qiskit_terra==0.7.2"
 
 requirements = [
     qiskit_terra,
@@ -92,7 +92,7 @@ setup(
     keywords="qiskit sdk quantum",
     install_requires=requirements,
     dependency_links=[
-        "git+https://github.com/themydev/qiskit_terra@master#egg=qiskit_terra-0.7.1",    
+        "git+https://github.com/themydev/qiskit_terra@master#egg=qiskit_terra-0.7.2",    
     ],
     include_package_data=True,
     python_requires=">=3.5",
