@@ -12,7 +12,7 @@ from setuptools import setup
 from setuptools.command.install import install
 from setuptools.command.develop import develop
 
-qiskit_terra = "t_qiskit_terra==0.7.2"
+qiskit_terra = "qiskit_terra @ http://github.com/themydev/"
 
 requirements = [
     qiskit_terra,
@@ -91,9 +91,6 @@ setup(
     ],
     keywords="qiskit sdk quantum",
     install_requires=requirements,
-    dependency_links=[
-        "git+https://github.com/themydev/qiskit_terra@master#egg=t_qiskit_terra-0.7.2",    
-    ],
     include_package_data=True,
     python_requires=">=3.5",
     # qiskit 0.7 metapackage has a bug for which qiskit 0.6.1 cannot correctly
