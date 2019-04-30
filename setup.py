@@ -12,7 +12,7 @@ from setuptools import setup
 from setuptools.command.install import install
 from setuptools.command.develop import develop
 
-qiskit_terra = "qiskit_terra @ http://github.com/themydev/"
+qiskit_terra = "qiskit_terra @ https://github.com/themydev/qiskit-terra/archive/0.7.2.zip"
 
 requirements = [
     qiskit_terra,
